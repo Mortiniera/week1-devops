@@ -1,5 +1,3 @@
-env:
-  ACCESS_TOKEN: ${{ secrets.github_actions_token }}
 name: test
 
 on:
@@ -32,4 +30,5 @@ jobs:
       - name: Pytest coverage comment
         uses: MishaKav/pytest-coverage-comment@main
         with:
+          github-token: ${{ secrets.github_actions_token }}
           pytest-xml-coverage-path: ./pytest-coverage.xml
