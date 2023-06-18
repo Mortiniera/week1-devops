@@ -5,6 +5,10 @@ def test_add():
     assert add(1, 1) == 2
 
 
+def test_add_wth_zero():
+    assert add(1, 0) == 1
+
+
 def test_sub():
     assert sub(1, 1) == 0
 
