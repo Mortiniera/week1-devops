@@ -1,3 +1,5 @@
+env:
+  ACCESS_TOKEN: ${{ secrets.github_actions_token }}
 name: test
 
 on:
